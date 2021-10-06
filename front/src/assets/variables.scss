@@ -1,0 +1,33 @@
+$black: #000;
+$black15: rgba(0, 0, 0, 0.15);
+
+$brand: #207DB3;
+$dark_brand: #1e6294;
+$light-brand: #2db0ff;
+$blue_bg:     #E0F3FF;
+
+$blue: #78C3FB;
+$indigo: #444054;
+$purple: #794c8a;
+$pink: #f65ca2;
+$red: #d92550;
+$orange: #fd7e14;
+$yellow: #229ef7;
+$green: #3ac47d;
+$teal: #16E0BD;
+$cyan: #16aaff;
+$blue-light: #eeeeee;
+$white: #ffffff;
+$gray: #495057;
+
+/* OVERLAYS */
+$grayOverlay: rgba(0,0,0,0.1);
+
+$rate-gradient: linear-gradient(90deg, $yellow 0%, rgba(56, 203, 246, 0.4) 0%, $white 100%);
+$primary-gradient: linear-gradient(120deg, $brand 0%, $light-brand 100%) !important;
+
+
+$xs-min:  576px;
+$sm-min: 768px;
+$md-min: 992px;
+$xxl-min: 1500px;

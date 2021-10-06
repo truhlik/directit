@@ -1,0 +1,65 @@
+{% extends "socialaccount/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+
+<!-- Page Heading -->
+<div class="page-heading jarallax" data-jarallax='{"speed": 0.2}'>
+    <div class="page-heading__inner">
+        <div class="container">
+            <h1 class="page-heading__title">{% trans "Sign Up" %}</h1><ol class="breadcrumb page-heading__breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+
+                <li class="breadcrumb-item active">{% trans "Sign Up" %}</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<!-- Page Heading / End -->
+
+<main class="site-content">
+
+    <div class="section-content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 ml-md-auto mr-md-auto">
+
+                    <div id="booked-profile-page">
+                        <div id="booked-page-form">
+
+                            <ul class="booked-tabs nav login bookedClearFix" id="booked-tabs" role="tablist">
+                                <li><a href="#profile-signup" id="profile-singup-tab" data-toggle="tab" role="tab" aria-selected="true" class="active"><i class="booked-icon ion-clipboard"></i>{% trans "Sign Up" %}</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+
+                                <div id="profile-signup" class="booked-tab-content single-page tab-pane fade show active " role="tabpanel" aria-labelledby="profile-login-tab">
+                                    <div class="booked-form-wrap bookedClearFix">
+                                        <form class="signup" id="signup_form" method="post" action="{% url 'socialaccount_signup' %}">
+                                          {% csrf_token %}
+                                          {{ form.as_p }}
+                                          {% if redirect_field_value %}
+                                          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                                          {% endif %}
+                                            <div class="login-submit">
+                                                <input type="submit" name="wp-submit" id="wp-submit" class="btn btn-lg btn-outline-primary" value="{% trans "Sign Up" %}">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END #booked-page-form -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include 'account/include/input-style-helper.html' %}
+
+{% endblock %}

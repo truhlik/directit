@@ -1,0 +1,23 @@
+project_name: directit
+git_repo: git@gitlab.com:endevel/clients/directit/directit_back.git
+sentry_dsn: https://4d36cb78b6844d2995a75c2bf5f89841:21967fc0ee5c465189e9ade8b1000479@sentry.endevel.cz/43
+
+db_name: directit
+db_user: directit
+db_pass: "{{ vault_db_pass }}"
+db_custom_ext: ['unaccent']
+
+project_secret_key: "{{ vault_project_secret_key }}"
+google_maps_api_key: 'AIzaSyDwoi0YQsyto22LiCrDYtdjl2ovTZwNkn8'
+python_path: /opt/python/bin/python3  # kvůli Django3.0 potřebujeme python3.7
+
+vue_frontend: true
+vue_project_name: directit_front
+vue_frontend_static: true
+vue_git_same_repo: true
+vue_project_relative_path: "front/src"
+
+#nxing_vhost_template: "{{ playbook_dir }}/templates/nginx_vhost.j2"
+#nxing_vhost_ssl_template: "{{ playbook_dir }}/templates/nginx_vhost_ssl.j2"
+
+celery_enabled: true

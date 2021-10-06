@@ -1,0 +1,21 @@
+from django.utils.translation import ugettext_lazy as _
+
+LICENCE_TYPE_PERPETUAL = 'PERPETUAL'
+LICENCE_TYPE_SUBSCRIPTION = 'SUBSCRIPTION'
+
+LICENCE_TYPE_CHOICES = (
+    (LICENCE_TYPE_PERPETUAL, _('perpetual')),
+    (LICENCE_TYPE_SUBSCRIPTION, _('subscription')),
+)
+
+LICENCE_METRIC_USER = 'USER'
+LICENCE_METRIC_DEVICE = 'DEVICE'
+LICENCE_METRIC_HW = 'HW'
+LICENCE_METRIC_OTHER = 'OTHER'
+
+LICENCE_METRIC_CHOICES = (
+    (LICENCE_METRIC_USER, _('počet uživatel')),
+    (LICENCE_METRIC_DEVICE, _('počet zařízení')),
+    (LICENCE_METRIC_HW, _('počet jader / RAM')),
+    (LICENCE_METRIC_OTHER, _('jiné')),
+)

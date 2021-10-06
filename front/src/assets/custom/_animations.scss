@@ -1,0 +1,37 @@
+.slideDown-enter-active {
+     -moz-transition-duration: 0.3s;
+   -webkit-transition-duration: 0.3s;
+   -o-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   -moz-transition-timing-function: ease-in;
+   -webkit-transition-timing-function: ease-in;
+   -o-transition-timing-function: ease-in;
+   transition-timing-function: ease-in;
+}
+
+.slideDown-leave-active {
+     -moz-transition-duration: 0.3s;
+   -webkit-transition-duration: 0.3s;
+   -o-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+   -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+   -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+   -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slideDown-enter-to, .slideDown-leave {
+   max-height: 500px;
+   overflow: hidden;
+}
+
+.slideDown-enter, .slideDown-leave-to {
+   overflow: hidden;
+   max-height: 0;
+}
+
+@keyframes highlight {
+    from{transform:scale(1)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+ }

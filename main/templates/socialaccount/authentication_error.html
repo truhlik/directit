@@ -1,0 +1,30 @@
+{% extends "socialaccount/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Social Network Login Failure" %}{% endblock %}
+
+{% block content %}
+<!-- Page Heading -->
+<div class="page-heading jarallax" data-jarallax='{"speed": 0.2}'>
+    <div class="page-heading__inner">
+        <div class="container">
+            <h1 class="page-heading__title">{% trans "Přihlašení se nepodařilo" %}</h1>
+            <ol class="breadcrumb page-heading__breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active">{% trans "Chyba přihlášení" %}</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="section-content">
+    <div class="container">
+        <p class="alert alert-danger">
+            {% trans "An error occurred while attempting to login via your social network account." %}
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}

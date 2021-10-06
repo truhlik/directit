@@ -1,0 +1,40 @@
+// company detail
+.detail-wrap {
+  .image-sec {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: $brand;
+    font-size: 150px;
+    min-height: 150px;
+    text-align: center;
+    width: 150px;
+
+    img {
+      width: 100%;
+    }
+
+    i{
+      background-image: linear-gradient(120deg, #141e30 0%, #2db0ff 100%) !important;
+    }
+  }
+}
+
+.detail-info {
+  font-size: 18px;
+  padding: 5px 0;
+  .icon-wrap{
+    display: inline-block;
+    width: 30px;
+  }
+  .info-title {
+    font-weight: bold;
+  }
+  .info-text {
+
+  }
+}
+
+.detail-description{
+  font-size: 18px;
+}

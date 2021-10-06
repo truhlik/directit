@@ -1,0 +1,220 @@
+label.required{
+  font-weight: 700;
+  position: relative;
+  &:after {
+    content: ' *';
+    color: $red;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -8px;
+  }
+}
+
+.form-control {
+
+  &:focus, &:active {
+    outline: none !important;
+  }
+}
+
+input, textarea, select {
+  &.error {
+    border: 1px solid $red;
+  }
+}
+
+span.title-tags, span.title-products {
+  color: $dark_brand;
+  font-weight: bold;
+}
+
+.form-con{
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.company-form-con, .form-con{
+  textarea{
+    min-height: 150px;
+  }
+}
+
+/* ROLES BUTTONS GROUP */
+.roles-btns{
+  width: 100%;
+  .btn-priamry{
+    background-color: transparent;
+    border-color: $gray-400;
+    color: $gray-600;
+    font-weight: bold;
+    &:not(:disabled){
+      &.active{
+        background-color: $brand;
+        border-color: $brand;
+      }
+      &:focus, &:current, &:default, &:active{
+        background-color: $white;
+      }
+    }
+  }
+}
+
+  #company-logo{
+    opacity: 0;
+  }
+  .company-logo{
+    border: 2px solid $brand;
+    border-radius: 10px;
+    color: $brand;
+    display:block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 250px; 
+    padding: 10px 3px;
+    text-align: center;
+
+    &:hover{
+      cursor: pointer;
+      box-shadow: 0 0.5rem 1rem $black15 !important;
+    }
+  }
+
+  .img-label{
+    text-align: center;
+    width: 100%;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .logo-img{
+    border-radius: 20px;
+    max-height: 200px;
+  }
+
+
+// callback form
+.callback-con{
+  margin: 15px auto;
+  max-width: 600px;
+}
+.callback-info {
+  align-items: center;
+  background: $gray-100;
+  border-bottom: 2px solid $brand;
+  display: flex;
+  margin-bottom: 30px;
+  padding: 5px;
+  span {
+    color: $brand;
+    display: block;
+    font-size: 14px;
+    &.icon {
+      font-size: 40px;
+      padding-right: 10px;
+    }
+  }
+}
+
+// search form
+.search-form-wrap{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.search-result {
+  .spinner-grow, .spinner-border{
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+// user form
+.user-form-wrap, .change-pswd-con {
+  padding-top: 20px;
+  .form-group {
+    width: 400px;
+  }
+  h2{
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+}
+
+// icons
+.big-icon{
+  font-size: 35px;
+}
+
+// files wrapper
+.files-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .file-wrap {
+    display: flex;
+    min-height: 60px;
+    min-width: 295px;
+    margin: 0 0 0 10px;
+    padding: 0 15px;
+    position: relative;
+    width: 45%;
+
+    @media(max-width: $sm-min) {
+      width: 100%;
+    }
+
+    &:nth-child(odd) {
+      margin-left: 50px;
+      @media(max-width: $sm-min) {
+        margin-left: 10px;
+      }
+    }
+
+    a {
+    font-size: 82px;
+
+    }
+
+    .file-icons {
+      max-width: 50px;
+    }
+
+    .file-info {
+      max-width: 100%;
+      padding: 10px 5px 10px 30px;
+      word-wrap: break-word;
+    }
+  }
+  .label {
+    color: $dark_brand;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .update-icon {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    left: -15px;
+    top: 20px;
+
+    &:hover {
+      color: $brand;
+    }
+  }
+  .delete-icon {
+    color: $red;
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    left: -15px;
+    top: 45px;
+
+    &:hover {
+      color: $brand;
+    }
+  }
+}

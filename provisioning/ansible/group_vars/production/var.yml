@@ -1,0 +1,18 @@
+### PROJECT VARIABLES ###
+git_branch: master
+settings_file: production
+project_domain: admin.directit.cz
+
+redis_db: 8
+
+redirect_http: true
+allow_robots: false
+default_notification_email: info@directit.cz
+
+email_host: directit-cz.mail.protection.outlook.com
+email_port: 25
+email_password:
+email_user:
+email_use_tls: true
+email_default_from: info@directit.cz
+hotjar_id: 2175041

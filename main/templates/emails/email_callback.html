@@ -1,0 +1,11 @@
+{% extends "emails/base_email.html" %}
+
+{% block content %}
+    <div>
+    Dobrý den,<br/><br/>
+    v administraci najdete nějaké nové Callback požadavky. Více informací zde:
+        {% for callback in qs %}
+            <a href="{{ callback.admin_url }}">{{ callback.admin_url }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}

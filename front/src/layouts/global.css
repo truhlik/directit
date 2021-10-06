@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Barlow";
+    src: local("Barlow"),
+    url(~assets/fonts/Barlow/Barlow-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"),
+    url(~assets/fonts/Inter/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"),
+    url(~assets/fonts/Inter/Inter-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+html, body, :root {
+    font-family: "Inter";
+}

@@ -1,0 +1,410 @@
+// general
+form {
+  width: 100%;
+}
+
+label {
+  color: $dark_brand;
+  font-weight: bold;
+}
+
+button {
+  svg {
+    margin-right: 5px;
+  }
+}
+
+table {
+  .list-tags-cell {
+    max-width: 240px;
+  }
+}
+
+//backgrounds
+.bg-transparent {
+  background-color: transparent;
+}
+
+// subheading
+.page-title-subheading {
+  max-width: 850px;
+}
+
+// transitions for pages
+.page-enter-active, .page-leave-active {
+  transition: opacity .2s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
+.bg-blue-icon {
+  background-color: $brand;
+  background-image: $primary-gradient;
+}
+
+.custom-container {
+  background-color: $white;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 10px;
+  @media(min-width: $xs-min){
+  padding: 20px 27px;
+  }
+}
+
+.hr-1{
+  border-color: $brand;
+  border-radius: 10px;
+  border-width: 3px;
+  margin-top: 5px;
+  max-width: 60px;
+}
+
+.btn-group{
+  .btn {
+    &.order-btn{
+      background: $white;
+      font-size: 18px;
+      width: 150px;
+      &:hover{
+        background: $light-brand;
+      }
+    }
+  }
+}
+
+.colored-titlepage {
+  .app-page-title {
+    background-color: transparent;
+    margin: 0;
+  }
+  .page-title-icon{
+    font-size: 35px;
+  }
+}
+
+.loader-overlay{
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  span{
+    font-size: 24px;
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+// Accessories
+.accessories-wrap {
+  margin-bottom: 20px;
+
+  span.title-tags, span.title-products {
+    color: $dark_brand;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+    small {
+      color: $gray-600;
+    }
+
+    &.required {
+      font-weight: bold;
+      &:after{
+        content: ' *';
+      }
+    }
+  }
+
+}
+
+.accessories-categories-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  >.category {
+    width: auto;
+    flex: 1 1 auto;
+  }
+}
+
+.accessories-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  >.tag {
+    width: auto;
+    flex: 1 1 auto;
+  }
+}
+
+.badge {
+  &:empty {
+    display: block;
+  }
+}
+
+// button
+.btn {
+  .badge {
+    &.badge-delete {
+      background: $red;
+      color: $white;
+      font-size: 10px;
+      font-weight: bold;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+// btn group
+.btn-group {
+  .disabled {
+    &.active {
+      background-color: $brand;
+      color: $white;
+      opacity: 1;
+    }
+  }
+}
+
+.btn-link{
+  &:hover {
+    text-decoration: none;
+  }
+
+  .user-name {
+    font-size: 17px;
+  }
+}
+
+// callback button
+.callback-button{
+  align-items: center;
+  background: $brand;
+  border: 2px solid $white;
+  border-radius: 50%;
+  bottom: 45px;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  font-size: 30px;
+  height: 60px;
+  justify-content: center;
+  position: fixed;
+  right: 45px;
+  width: 60px;
+  z-index: 999;
+}
+
+// MAP
+#map {
+  position: relative;
+  .card {
+    background-color: $white;
+    .card-header {
+      background-color: $white;
+      color: $brand;
+      padding: 0;
+      text-align: center;
+      margin: 0 auto;
+
+      span{
+        margin: 0 auto;
+      }
+    }
+    .card-body {
+      border-radius: 10px;
+      font-size: 19px;
+      text-align: center;
+    }
+    .card-footer {
+      background-color: $white;
+      border: none;
+      text-align: center;
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+  .btn-map {
+    border: 1px solid $white
+  }
+}
+
+// map spinner
+.map-spinner {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.main-card{
+  .card-header{
+    background-color: transparent;
+    color: $white;
+  }
+}
+
+// custom buttons
+.custom-lg{
+  font-size: 19px;
+  min-height: 50px;
+  min-width: 150px;
+}
+
+.custom-md{
+  font-size: 17px;
+  min-height: 40px;
+  min-width: 130px;
+}
+
+/* SERVICES */
+.analysis-services {
+  margin: 0 auto;
+  max-width: 1100px;
+
+  h2 {
+    font-size: 23px;
+    line-height: 35px;
+    margin: 20px auto 40px;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  .btn-icon-vertical {
+    color: $gray-600;
+    height: 100%;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $white;
+    }
+
+    .btn-icon-wrapper {
+      font-size: 50px;
+    }
+  }
+}
+
+// app header left
+.app-header-left {
+  font-size: 11px;
+  margin-left: auto;
+  position: relative;
+  @media(min-width: $xs-min){
+    display: block;
+    font-size: 14px;
+  }
+  @media(min-width: $md-min){
+    font-size: 17px;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  svg {
+    color: $brand;
+    display: none;
+    margin-right: 5px;
+    @media(min-width: $xs-min){
+      display: block;
+    }
+  }
+  .info-text {
+    color: $gray-500;
+    font-size: 12px;
+    left: 23px;
+    position: absolute;
+    top: -15px;
+  }
+}
+.app-header .app-header__content .app-header-right {
+  margin-left: 0;
+}
+
+.help-text {
+  color: $gray-600;
+}
+
+// main content
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+// bootstrap widgets
+.time-widget {
+  .bootstrap-datetimepicker-widget.dropdown-menu {
+    min-width: 160px !important;
+    width: 160px !important;
+  }
+
+  .bootstrap-datetimepicker-widget table td {
+    height: 40px !important;
+    line-height: 20px !important;
+    padding: 0 !important;
+  }
+
+  .bootstrap-datetimepicker-widget table td span, .bootstrap-datetimepicker-widget table td i {
+    height: 20px;
+    line-height: 34px;
+    width: 20px;
+  }
+
+  .bootstrap-datetimepicker-widget .picker-switch td i {
+    height: 1.5rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .bootstrap-datetimepicker-widget table td i {
+    height: 34px !important;
+    line-height: 34px !important;
+    width: 34px !important;
+  }
+
+  .bootstrap-datetimepicker-widget {
+    .list-unstyled {
+      width: 150px;
+    }
+  }
+
+  .timepicker {
+    .table-condensed {
+      width: 150px;
+
+      tr {
+        td {
+          a {
+            //height: 20px;
+            &[data-action] {
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// logo
+.white-logo {
+  max-width: 250px;
+}
+
+//cursor
+.cursor-default {
+    cursor: default!important;
+}

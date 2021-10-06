@@ -1,0 +1,9 @@
+{% extends "emails/base_email.html" %}
+
+{% block content %}
+    <div>
+    Dobrý den,<br/><br/>
+    blíží se expirace licence pro váš software {{ obj }}. Pro více informací navštivte:
+        <a href="{{ BASE_URL }}">{{ BASE_URL }}</a>
+    </div>
+{% endblock %}

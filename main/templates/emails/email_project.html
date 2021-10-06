@@ -1,0 +1,11 @@
+{% extends "emails/base_email.html" %}
+
+{% block content %}
+    <div>
+    Dobrý den,<br/><br/>
+    v administraci najdete nějaké nové Projekty. Více informací zde:
+        {% for project in qs %}
+            <a href="{{ project.admin_url }}">{{ project.admin_url }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}

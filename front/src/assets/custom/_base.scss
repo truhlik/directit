@@ -1,0 +1,16 @@
+//texts
+.text-bold {
+  font-weight: bold;
+}
+
+// lists
+.list-alpha {
+  list-style-type: lower-alpha;
+}
+
+// only views
+.desktop-only {
+  @media(max-width: $sm-min) {
+    display: none !important;
+  }
+}

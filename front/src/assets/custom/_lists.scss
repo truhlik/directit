@@ -1,0 +1,114 @@
+#company-list-wrapper {
+  .companies_map{
+    margin-bottom: 40px;
+  }
+}
+
+.companies-card{
+  button {
+    min-width: 80px;
+  }
+}
+
+.suggestion-wrap {
+  margin-bottom: 77px;
+
+  .box-tags {
+    margin: 0 auto;
+    max-width: 593px;
+    min-height: 50px;
+    text-align: left;
+
+    @media(max-width: $sm-min) {
+      text-align: center;
+    }
+  }
+}
+
+.suggestion-group{
+  max-width: 500px;
+  position: relative;
+  width: 100%;
+  .suggestion-result-wrap{
+    background-color: $white;
+    border: 1px solid $gray-300;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    span{
+      display: block;
+      font-size: 18px;
+      padding: 5px 5px 5px 8px;
+      text-align: left;
+      transition: all .3s;
+      width: 100%;
+      &:hover{
+        cursor: pointer;
+        background-color: $gray-200;
+      }
+
+      &.active {
+        background-color: $brand;
+        color: $white;
+
+      }
+    }
+  }
+}
+
+// suggestion btn group
+.searcher-btn-group{
+  margin-left: 10px;
+}
+
+// add star btn
+.add-stars-btn{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  right: 2px;
+  position: absolute;
+  top: 5px;
+  z-index:100;
+  i {
+    font-size: 19px;
+    font-weight: bold;
+  }
+}
+
+// make order button
+.btn-make-order{
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+.list-group-item{
+  padding: 5px;
+  span {
+    &.badge-cat {
+      background-color: $blue_bg;
+      border-radius: 5px;
+      color: $brand;
+      cursor: default;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 3px;
+      padding: 0 4px 0 4px;
+
+    }
+  }
+}
+
+// company boxes
+.profile-responsive{
+  .widget-content {
+    height: 50px;
+    overflow: hidden;
+  }
+  .menu-header-content{
+    min-height: 137px;
+  }
+}

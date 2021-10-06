@@ -1,0 +1,96 @@
+.modal-dialog {
+  .order-logo {
+    margin: 0 auto;
+    max-height: 150px;
+  }
+}
+
+.modal-dialog {
+  .modal-header{
+    background-color: $brand;
+    background-image: $primary-gradient;
+    color: $white;
+    text-align: center;
+  }
+}
+
+.modal {
+  .message{
+    color: $brand;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .info{
+    color: $brand;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+  .check-icon {
+    color: $brand;
+    font-size: 100px;
+    margin: 0 auto;
+  }
+// testimonials - form - modal
+
+.testimonials-form-modal{
+  .rate-info {
+    border-left: 3px solid $brand;
+    display: block;
+    padding: 3px 0 3px 5px;
+  }
+  .row {
+    margin: 0 auto;
+  }
+  .title {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .star-rate {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .eval-text-group {
+    margin: 0 auto;
+  }
+
+  #id-eval-text{
+    min-height: 100px;
+  }
+
+}
+
+// testemonials modal
+
+.testimonials-modal {
+  .testimonial-wrap {
+    padding: 5px;
+    width: 100%;
+  }
+  .top-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    .name {
+      display: block;
+      font-size: 17px;
+      font-weight: bold;
+      padding-top: 8px
+    }
+    .text {
+
+    }
+  }
+}
+
+// order modal
+#id-order-note {
+  min-height: 150px;
+}

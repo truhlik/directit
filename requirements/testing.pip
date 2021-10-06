@@ -1,0 +1,4 @@
+-r base.pip
+
+model-bakery==1.0.2
+flake8

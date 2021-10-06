@@ -1,0 +1,10 @@
+### PROJECT VARIABLES ###
+git_branch: develop
+settings_file: develop
+project_domain: directit.endevel.cz
+
+redirect_http: true
+allow_robots: false
+default_notification_email: info@directit.cz
+redis_db: 8
+hotjar_id:

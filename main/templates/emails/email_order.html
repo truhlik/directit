@@ -1,0 +1,11 @@
+{% extends "emails/base_email.html" %}
+
+{% block content %}
+    <div>
+    Dobrý den,<br/><br/>
+    v administraci najdete nějaké nové Objednávky. Více informací zde:
+        {% for order in qs %}
+            <a href="{{ order.admin_url }}">{{ order.admin_url }}</a>
+        {% endfor %}
+    </div>
+{% endblock %}
